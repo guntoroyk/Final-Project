@@ -36,15 +36,49 @@
                         <a class="nav-link text-white" href="#explore">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Favorite</a>
+                        <a class="nav-link text-white" href="favorite.html">Favorite</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#"><i class="fas fa-paw"></i> <i class="fas fa-plus" style="font-size:0.90rem;"></i></a>
+                        <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-paw"></i> <i class="fas fa-plus" style="font-size:0.90rem;"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New pet</h5>
+                    <button type="button" class="close btn-tosca" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Pet Name</label>
+                            <input type="text" class="form-control" id="inputPetName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Pet Description:</label>
+                            <textarea class="form-control" id="inputPetDesc" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Pet Image Url</label>
+                            <input type="text" class="form-control" id="inputPetImage" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-tosca" id="btnAddPet">Add pet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
     <div class="row menu" id="home">
         <!-- slider -->
@@ -93,12 +127,16 @@
         <div class="row justify-content-center text-center menu my-5 mb-5" id="explore">
             <div class="col-10 col-md-12">
                 <h1 class="display-4">Hello, Pets Lovers!</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt in odio delectus vel impedit aspernatur doloribus, magnam quam, aut repudiandae, ut nam aperiam blanditiis soluta sunt commodi nostrum labore iure! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa, dignissimos saepe assumenda nihil velit. Unde culpa, eum velit iste magni, aperiam vero nihil, molestiae voluptatem illo sed quis nostrum.</p>
+                <p class="lead">Pets are animals that are deliberately maintained by humans to be used as everyday friends, these animals are also useful to help humans eliminate stress experienced after a full day of work. Apart from that pets can also be used to help humans such as guarding the house or driving away pests at home.</p>
                 <!-- <hr class="my-4"> -->
-                <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sequi recusandae omnis ea molestiae, dolores dolorem quisquam? Fugit, blanditiis quam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, numquam expedita iste ea porro laboriosam nisi accusamus temporibus vitae, pariatur, hic sed exercitationem distinctio saepe in ex quo animi soluta.</p>
-                <a class="btn btn-lg text-white Btn" id="" href="explore.html" role="button">Let's Explore</a>
-            </div>
-            
+                <p class="text-justify">There are so many types or species of animals that can be used as pets, ranging from birds, dogs, cats, fish, and many others. Want to find cute pets?</p>
+                
+                <!-- <div class="row justify-content-center listPet">
+                    
+                </div> -->
+                
+                <a class="btn btn-lg btn-tosca" id="" href="explore.html" role="button">Let's Explore!</a>
+            </div>    
         </div>
         
         <!-- Footer -->
@@ -122,7 +160,7 @@
                                     <div class="form-group">
                                         <textarea class="form-control" name="message" id="inputMessage" placeholder="Your message" rows="3"></textarea>
                                     </div>
-                                    <button class="btn text-white Btn" type="submit">Submit</button>
+                                    <button class="btn btn-tosca" type="submit">Submit</button>
                                 </form>
                                 
                             </div>
@@ -132,25 +170,25 @@
                         <div class="col">
                             <h3 style="font-weight: 100;">official@<span id="petQueTxt"><b>petQue</b></span>.com</h3>
                             <div class="col-md-12 text-center">
-                                    <p>&copy; <span id="petQueTxt"><b>petQue</b></span> 2019. <br>
-                                        All Right Reserved </p>
+                                <p>&copy; <span id="petQueTxt"><b>petQue</b></span> 2019. <br>
+                                    All Right Reserved </p>
                                 </div>
+                            </div>
                         </div>
+                        
+                        
                     </div>
                     
-                    
                 </div>
-                
-            </div>
-        </footer>
-    </section>
-    
-    
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <script src="js/script.js"></script>
-</body>
-</html>
+            </footer>
+        </section>
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script src="js/script.js"></script>
+    </body>
+    </html>
